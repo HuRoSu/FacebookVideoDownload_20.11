@@ -7,8 +7,8 @@ re = requests.get(url)
 
 soup = bs4.BeautifulSoup(re.text,"html.parser")
 
-re2 = soup.find_all('script',type="application/ld+json")
+find_application = soup.find_all('script',type="application/ld+json")
 
-re3 = ((str(re2).split('"')))
+code_split = ((str(find_application).split('"')))
 
-print(re3[31].replace('\\',""))
+print(code_split[31].replace('\\',""))
