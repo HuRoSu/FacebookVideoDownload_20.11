@@ -1,7 +1,7 @@
 import bs4
 import requests
 
-url = "https://www.facebook.com/ParadiseWildlifeParkZSH/videos/black-friday-super-sale-paradise-wildlife-park/213430976864387/?__so__=permalink&__rv__=related_videos"
+url = input()
 
 re = requests.get(url)
 
